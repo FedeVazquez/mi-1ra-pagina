@@ -1,0 +1,654 @@
+/*css basico*/
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+html{
+    height: 100%;
+}
+
+body{
+    background-color: black;
+    color: aliceblue;
+}
+.navbar{
+    zoom: 150%;
+}
+
+.nav-item a{
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.linea-separacion{
+    background-color: #b03c27;
+    height: 2px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+/*footer------------------*/
+
+footer{
+    background-color: #000000;
+    color: #ffffff;
+}
+#centr-footer h1{
+    text-align: center;
+    padding: 2%;
+    text-transform: uppercase;
+}
+
+#redes-footer{
+    text-align: center;
+}
+
+#redes-footer a{
+    text-decoration: none;
+}
+
+
+.icon-f{
+    margin-left: 4%;
+    margin-right: 4%;
+    color: #fbfbfb;
+    zoom: 200%;
+    margin-bottom: 5%;
+}
+
+.icon-f:hover{
+    color: #e9cb5f;
+}
+
+#copy{
+    text-align: center;
+    position: relative;
+    bottom: 0;
+}
+/*footer------------------*/
+
+
+
+/*css basico*/
+
+
+
+/*pagina principal*/
+/*pagina principal*/
+
+.contenedor{
+    display: flex;
+    height:100%;
+}
+
+.body-prin{
+    max-width: 1400px;
+    margin:auto;
+}
+
+/* texto de la izquierda------------------------*/
+/* texto de la izquierda------------------------*/
+
+.izquierda{
+    height:100%;
+    background-color: #322222;
+    width: 75%;
+    float: left;
+}
+.part-1{
+    text-align: center;
+}
+.part-1 h1{
+    padding-top: 2%;
+    text-transform: uppercase;
+    font-weight:bold;
+    zoom: 140%;
+}
+.part-1 a{
+    color: #e9cb5f;
+    font-size: larger;
+}
+
+.parrafo-largo{
+    padding: 10px;
+}
+
+#sobrelapagina{
+    background-color: #101010;
+    padding-bottom: 10%;
+}
+
+.imginfo{
+    float: right;
+    width: 30%;
+    margin: 3px;
+}
+
+.infopag h3{
+    width: 70%;
+    float: left;
+    text-align: center;
+    padding: 12.5%;
+}
+
+.separacioninf{
+    clear:both;
+}
+.animado{
+    transition: all 1s;
+    opacity: 0;
+}
+
+.infopag{
+    transition: all 1s;
+    display: flex;
+    flex-direction: row;
+    padding: 2%;
+    color: #ffffff;
+}
+
+.infopag:hover{
+    padding: 0;
+    color: #e9cb5f;
+}
+
+.info-per{
+    margin: 0;
+}
+
+.textoper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    zoom: 150%;
+    text-transform: uppercase;
+}
+
+.infoa{
+    position: relative;
+    color: #ffffff
+}
+
+/*texto de la derecha -------------------------------*/
+/*texto de la derecha -------------------------------*/
+
+.derecha{
+    padding: 5px;
+    background-color: #482d2d;
+    float: right;
+    width: 25%;
+}
+
+.texto-aside{
+    line-height: 100%;
+}
+
+.derecha table{
+    text-align: center;
+    width: 100%;
+}
+.derecha table a{
+    cursor: pointer;
+    color: #e9cb5f;
+}
+.derecha tr td{
+    word-break: break-all;
+    font-weight: bold;
+    border:1px solid #e9cb5f;
+    color: #e2e2e2;
+    background-color: #262626;
+}
+
+.noticia-flex{
+    display: flex;
+    flex-direction: column;
+}
+.noticia{
+    margin-top: 5px;
+    vertical-align: middle;
+    background-color: #5f3535;
+}
+.noticia img{
+    padding: 1%;
+    float: left;
+    width: 30%;
+}
+
+.scroll{
+    height: 35vh;
+	width: 100%;
+	overflow: auto;
+	border: 1px solid #000000;
+	background-color: #aa6868;
+    padding: 2px;
+
+}
+
+.discord{
+    width:100%;
+}
+
+
+/*diseño pagina principal de mobil*/
+/*diseño pagina principal de mobil*/
+
+@media screen and (max-width: 600px) {
+    .contenedor{
+        display: block;
+    }
+
+    .izquierda{
+        width: 100%;
+        float: none;
+    }
+
+    .derecha{
+        height:100%;
+        width: 100%;
+        float: none;
+    }
+    .discord{
+        height: 400px;
+    }
+    .sticky{
+        height: 100%;
+        display: flex;
+    }
+    .scroll{
+        height: 370px;
+    }
+}
+/*diseño pagina principal de mobil*/
+/*diseño pagina principal de mobil*/
+
+/*-----------------------pagina personajes---------------------*/
+
+/*contenedor de fotos*/
+
+#bodyper{
+    height: 100%;
+    margin: 0;
+}
+#cont-personajes{
+    margin-top: 10vh;
+    height: 70vh;
+}
+
+#personajesflex{
+    display: flex;
+    height: 100%;
+    transition: all 1s;
+}
+
+.cont-foto-personaje{
+    cursor: pointer;
+    height: 100%;
+    opacity: 0.7;
+    display: flex;
+    overflow-x: hidden;
+    transition: all 1s;
+}
+
+.cont-foto-personaje:hover{
+    padding-left: 3%;
+    padding-right: 3%;
+    opacity: 1;
+}
+
+.fotopersonaje{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+@media screen and (max-width: 500px) {
+    #cont-personajes{
+    display:none;
+    }
+}
+
+@media screen and (min-width: 501px) {
+    #carrusel{
+    display:none;
+    }
+}
+
+
+/*paginas de informacion de personajes---------------------------------*/
+
+.paginas-personajes{
+    width: 90%;
+    margin-left:5% ;
+    height: 100%;
+    background-color: #000000;
+    display: none;
+}
+.video-bio{
+    background-color: #000000;
+    width: 100%;
+    margin: 0;
+    position: relative;
+}
+
+.bg-video{
+    width: 100%;
+    padding: 0;
+}
+
+.texto-video{
+    max-width: 30%;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+}
+.texto-video h2{
+    padding-bottom: 2%;
+}
+
+@media screen and (max-width: 750px){
+    .texto-video{
+        max-width: 90%;
+        position: relative;
+        left: 5%;
+    }
+}
+
+
+.cont-cajas-tutos h1{
+    padding-top: 4%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.tutoriales-per{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.cajatuto{
+    display: flex;
+    padding: 5%;
+}
+
+.cajatuto figure p{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: large;
+}
+
+.cont-arm{
+    padding-top: 1%;
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-arm{
+    max-width: 800px;
+    background-color: #262626;
+    display: grid;
+    grid-template-columns: 20%, auto;
+    border: 2px solid #e9cb5f;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.img-armo{
+    width: 100px;
+    height: 200px;
+    text-align: center;
+    grid-column: 1;
+}
+.text-arm{
+    position: relative;
+    grid-column: 2;
+    text-align: center;
+    vertical-align: middle;
+    margin: auto;
+    width: 80%;
+}
+/* pagina de armar builds-------------------------------------------*/
+/* pagina de armar builds-------------------------------------------*/
+
+#cont-builds{
+    background-color:#5f3535;
+    width: 100%;
+    text-align: center;
+}
+
+#build2{
+    display: none;
+}
+
+.cajabuilds{
+    height: 100%;
+    background-color: #262626;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cajabuilds table{
+    margin: 2.5%;
+    background-color: #322222;
+    width: 150px;
+    height: 300px;
+}
+
+.img-armor{
+    background-color: #dadada;
+    height: 100px;
+    width: 60px;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cursor{
+    cursor: pointer;
+}
+
+.cajabuilds table tr th,td{
+    text-align: center;
+    width: 50px;
+    max-height: 50px;
+    border: 2px solid #e9cb5f;
+}
+
+
+/*formulario pop-up*/
+
+#cont-form{
+    transition: all 1s;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+    display: none;
+}
+
+#bg-form{
+    background-color: #000000;
+    opacity: 0.7;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.form-posicion{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    width: 80%;
+    max-width: 400px;
+    height: 80%;
+    max-height: 500px;
+    background-color: #322222;
+    z-index: 1;
+}
+
+.dat-form{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+}
+#x-form{
+    border-color: #e9cb5f;
+    color: #e9cb5f;
+    background-color: transparent;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+
+.opciones{
+    margin: 2.5%;
+    text-align: center;
+    height: 40px;
+}
+
+.dat-form input{
+    margin-top: 2.5%;
+}
+
+.ocular-boton{
+    display:none;
+}
+.boton-agregar{
+    display: flex;
+    justify-content: center;
+}
+
+/* comparar*/
+.boton-sumar-buid{
+    height: 30px;
+    justify-content: center;
+    display: flex;
+}
+/* comparar*/
+
+#pos-dat-complet{
+    background-color: #262626;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.dat-complet-build{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    background-color: #322222;
+    width: 150px;
+    height: 300px;
+}
+
+.dat-complet-build table{
+    margin: 2.5%;
+    background-color: #322222;
+    width: 150px;
+    height: 300px;
+}
+.dat-complet-build table tr, th{
+    text-align: center;
+    width: 50px;
+    max-height: 50px;
+    border: 2px solid #e9cb5f;
+}
+
+#pos-dat-complet button{
+    vertical-align: middle;
+    margin: 2%;
+    height: 30px;
+}
+.sep-build{
+    margin: 0;
+    text-align: center;
+    background-color:#5f3535;
+}
+
+.boton-sumar-buid{
+    background-color: #262626;
+    height: 30px;
+    zoom: 150%;
+}
+
+/*galerias---------------*/
+
+#cont-ganadores{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #262626;
+}
+
+.ganador{
+    width: 300px;
+    text-align: center;
+}
+.ganador img{
+    width: 250px;
+    height: 350px;
+    margin: 3%;
+}
+
+.ganador button{
+    background-color: #5f3535;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 1%;
+}
+/*---------------------------*/
+
+#cont-dibujos{
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #262626;
+}
+
+.participante{
+    width: 210px;
+    text-align: center;
+    border: 2px solid white;
+    margin:1% ;
+}
+.participante img{
+    width: 200px;
+    height: 300px;
+}
+
+
+
+/*inscripciones dibujos*/
+
+.text-form{
+    width: 100%;
+    font-size: large;
+    font-weight: bold;
+}
+
+#form-inscrip{
+    margin:-1% ;
+    border: 2px solid #e9cb5f;
+}
+.form{
+    text-align: center;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.form input{
+    margin: 2%;
+}
